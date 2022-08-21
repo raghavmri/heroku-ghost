@@ -1,28 +1,22 @@
 {
-	"name": "ghost-on-heroku",
-	"description": "Just a blogging platform on Heroku.",
-	"license": "MIT",
-	"version": "4.48.0",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/raghavmri/heroku-ghost"
-	},
-	"bugs": "https://github.com/TryGhost/Ghost/issues",
-	"private": true,
-	"dependencies": {
-		"casper": "github:TryGhost/Casper#main",
-		"ghost": "4.48.0",
-		"lyra": "github:TryGhost/lyra#main",
-		"ghost-storage-adapter-s3": "2.8.0",
-		"ghost-storage-cloudinary": "2.2.4",
-		"ghost-webdav-storage-adapter": "0.4.1",
-		"mysql": "^2.17.1"
-	},
-	"engines": {
-		"node": "16.X"
-	},
-	"scripts": {
-		"start": "node server.js",
-		"postinstall": "bash bin/copy-themes.sh && bash bin/copy-webdav-plugin.sh"
-	}
+  "name": "ghost",
+  "version": "5.4.1",
+  "description": "Deploy Ghost v4 on Railway",
+  "main": "index.js",
+  "author": "farazpatankar",
+  "license": "MIT",
+  "engines": {
+    "node": "16.X"
+  },
+  "dependencies": {
+    "casper": "github:TryGhost/Casper#main",
+    "ghost": "5.4.1",
+    "ghost-storage-cloudinary": "2.2.1",
+    "lyra": "github:TryGhost/lyra#main",
+    "mysql2": "2.3.3"
+  },
+  "scripts": {
+    "start": "bin/create-config && node index.js",
+    "postinstall": "bin/alter-auth-method && bash bin/cloudinary.sh && bash bin/themes.sh"
+  }
 }
