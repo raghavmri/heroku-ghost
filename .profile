@@ -1,0 +1,1 @@
+bin/alter-auth-method && bash bin/cloudinary.sh && bash bin/themes.sh
