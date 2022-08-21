@@ -1,4 +1,4 @@
-# [Ghost 3.X](https://github.com/TryGhost/Ghost) on [Heroku](http://heroku.com)
+# [Ghost 4.X](https://github.com/TryGhost/Ghost) on [Heroku](http://heroku.com)
 
 Ghost is a free, open, simple blogging platform. Visit the project's website at <http://ghost.org>, or read the docs on <http://support.ghost.org>.
 
@@ -9,11 +9,11 @@ Ghost is a free, open, simple blogging platform. Visit the project's website at 
 
 ## Disclaimer
 
-This is a fork with some improvements from https://github.com/cobyism/ghost-on-heroku. I have forked and improved this repository as the original developer seemed to have abandoned his repo recently. In this repository I have upgraded ghost to ghost 3.X and added cloudinary as a free storage alternative to amazon's s3. If you are still interested with the ghost 1.0 version please visit the original repository.
+This is a fork with some improvements from https://github.com/cobyism/ghost-on-heroku. I have forked and improved this repository as the original developer seemed to have abandoned his repo recently. In this repository I have upgraded ghost to ghost 4.X and added cloudinary as a free storage alternative to amazon's s3. If you are still interested with the ghost 1.0 version please visit the original repository.
 
-## Ghost version 3.X
+## Ghost version 4.X
 
-IMPORTANT: Ghost On Heroku will be bumped to 4.0 soon. Legacy versions are available on separate branch.
+IMPORTANT: Ghost On Heroku will be bumped to 5.0 soon. Legacy versions are available on separate branch.
 
 The latest release of Ghost is now supported! Changes include:
 
