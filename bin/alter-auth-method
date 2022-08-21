@@ -15,7 +15,7 @@ alterAuthenticationMethod();
 
 function alterAuthenticationMethod() {
   var connection = mysql.createConnection(
-    prcoess.env.JAWSDB_URL || process.env.MYSQL_URL
+    process.env.JAWSDB_URL || process.env.MYSQL_URL
   );
   connection.query(
     "ALTER USER `root`@`%` IDENTIFIED WITH mysql_native_password BY ?",
